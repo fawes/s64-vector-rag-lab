@@ -1,0 +1,26 @@
+[project]
+name = "s64-vector-rag-lab"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Kaleem Khan", email = "itsaksquare@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb>=2.0.0",
+    "numpy>=2.5.4",
+    "pydantic>=2.14.2",
+    "rich>=15.0.0",
+    "scikit-learn>=1.9.1",
+]
+
+[project.scripts]
+s64-vector-rag-lab = "s64_vector_rag_lab:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+package = false
